@@ -9,14 +9,17 @@ Simple Python Package
 """
 
 setup(
-    name="sample",
+    name="selenium_driver",
     version=VERSION,
     author="TZ",
     author_email="zaptom.pro@gmail.com",
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     packages=find_packages(),
-    install_requires=[],
+    install_requires=["selenium", "selenium_driver"],
+    dependency_link=[
+        "git+git://github.com/Tomizap/selenium-scrapper.git"
+    ],
     keywords=[],
     classifiers=[]
 )

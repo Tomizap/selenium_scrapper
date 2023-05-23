@@ -136,7 +136,7 @@ def selenium_scrapper(driver=None, limit=100, url=None):
                 urls = get_urls(driver=driver, setting=setting)
                 for i in range(len(urls)):
                     driver.get(url=urls[i])
-                    data.append(scrapper(driver=driver))
+                    data.append(selenium_scrapper(driver=driver))
 
             elif '/view' in url:
 
@@ -166,7 +166,7 @@ def selenium_scrapper(driver=None, limit=100, url=None):
                     }
                 }
                 for i in range(len(get_urls(driver=driver, setting=setting))):
-                    data.append(scrapper(driver=driver, url=urls[i]))
+                    data.append(selenium_scrapper(driver=driver, url=urls[i]))
 
             elif '/view' in url:
 
@@ -195,7 +195,7 @@ def selenium_scrapper(driver=None, limit=100, url=None):
                     }
                 }
                 for i in range(len(get_urls(driver=driver, setting=setting))):
-                    data.append(scrapper(driver=driver, url=urls[i]))
+                    data.append(selenium_scrapper(driver=driver, url=urls[i]))
 
             elif '/view' in url:
 
@@ -223,7 +223,7 @@ def selenium_scrapper(driver=None, limit=100, url=None):
                 }
                 urls = get_urls(driver=driver, setting=setting)
                 for i in range(len(urls)):
-                    data.append(scrapper(driver=driver, url=urls[i]))
+                    data.append(selenium_scrapper(driver=driver, url=urls[i]))
 
         elif '/in' in url:
 

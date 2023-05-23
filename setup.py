@@ -8,8 +8,8 @@ Simple Python Package
 """
 
 setup(
-    name="selenium_driver",
-    # version="0.0.1",
+    name="selenium_scrapper",
+    version="0.0.1",
     author="TZ",
     author_email="zaptom.pro@gmail.com",
     description=DESCRIPTION,

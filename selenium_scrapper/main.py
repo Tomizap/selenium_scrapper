@@ -254,3 +254,4 @@ def selenium_scrapper(driver=None, limit=100, url=None):
     # ================================================================================
 
     return data
+

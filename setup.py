@@ -15,7 +15,7 @@ setup(
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     packages=find_packages(),
-    install_requires=["selenium", "selenium_driver @ git+https://github.com/Tomizap/selenium-scrapper.git#egg=selenium_scrapper"],
+    install_requires=["selenium", "selenium_driver @ git+https://github.com/Tomizap/selenium_driver.git#egg=selenium_driver"],
     keywords=[],
     classifiers=[]
 )

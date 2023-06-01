@@ -107,18 +107,18 @@ all_models = [
         "sequence": {
             "JOB_NAME:get": "h1",
             "JOB_LOCATION:get": "span.jobs-unified-top-card__bullet",
-            # "JOB_TIME:get": "span.jobs-unified-top-card__posted-date",
-            # "JOB_WORKSPACE:get": "span.jobs-unified-top-card__workplace-type",
-            # "JOB_APPLICATION_COUNT:get": "span.jobs-unified-top-card__applicant-count",
-            # "JOB_SPECIFICATIONS:get": "ul > li.jobs-unified-top-card__job-insight > span",
-            # # COMPANY
-            # "COMPANY_LINKEDIN:get": {
-            #     "selector": "section.jobs-company a",
-            #     "property": "href"
-            # },
-            # f":click_{rand()}": "section.jobs-company a",
-            # f":sequence_{rand()}": sequences['linkedin']['COMPANY'],
-            # f":goto_{rand()}": ":original_url",
+            "JOB_TIME:get": "span.jobs-unified-top-card__posted-date",
+            "JOB_WORKSPACE:get": "span.jobs-unified-top-card__workplace-type",
+            "JOB_APPLICATION_COUNT:get": "span.jobs-unified-top-card__applicant-count",
+            "JOB_SPECIFICATIONS:get": "ul > li.jobs-unified-top-card__job-insight > span",
+            # COMPANY
+            "COMPANY_LINKEDIN:get": {
+                "selector": "section.jobs-company a",
+                "property": "href"
+            },
+            f":click_{rand()}": "section.jobs-company a",
+            f":sequence_{rand()}": sequences['linkedin']['COMPANY'],
+            f":goto_{rand()}": ":original_url",
             # RECRUITER
             "RECRUITER_LINK:get": {
                 "selector": ".hirer-card__hirer-information > a.app-aware-link",
